@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mhw.css">
+    <title>Monster Hunter World</title>
+</head>
+<body>
+    <header class="navbar"> 
+        <nav>
+        <span class="logo">Hiraeth</span>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#monsters">Monsters</a>
+        <a href="#guild_registration">Guild</a>
+        </nav>
+    </header>
+
+    <audio autoplay loop id="bgmusic">
+        <source src="./audio/seliana.mp3" type="audio/mpeg">
+    </audio>
+    <button class="music-btn" onclick="toggleMusic()">♪</button>
+
+    <section id="home">        
+        <h2>The Hunt Awaits!</h2>
+        <p>Face the most fearsome monsters in the New World</p>
+        <a href="#guild_registration">The hunt begins!</a>
+    </section>
+
+    <section id="about">
+        <h2>Welcome to the New World</h2>
+        <p>Monster Hunter: World is an action RPG where you hunt massive beasts in a seamless open world to craft better gear from their remains. It's Capcom's best-selling title, famous for its 14 unique weapon styles and 4-player co-op gameplay.</p>
+    </section>
+
+    <section id="monsters">
+        <div class="cards-container">
+            <h2>Elder Dragons</h2>
+                <article class="nergigante">
+                    <img src="./images/nergigante.jpg" alt="Nergigante">
+                    <h3>Nergigante</h3>
+                    <p>An elder dragon that feeds on other elder dragons.</p>
+                    <a href="#">Learn more...</a>
+                </article>
+        
+                <article class="kushala_daora">
+                    <img src="./images/kushala_daora.png" alt="Kushala Daora">
+                    <h3>Kushala Daora</h3>
+                    <p>Kushala Daora is a metallic-skinned Elder Dragon that functions as a living tempest.</p>
+                    <a href="#">Learn more...</a>
+                </article>
+
+                <article class="lunastra">
+                    <img src="./images/lunastra.jpg" alt="Lunastra">
+                    <h3>Lunastra</h3>
+                    <p>Lunastra is a blue-scaled Elder Dragon and the aggressive female counterpart to the Teostra.</p>
+                    <a href="#">Learn more...</a>
+                </article>
+        </div>
+    </section>
+
+    <section id="guild_registration">
+        <h2>Welcome to the adventurer's guild!</h2>
+        <form>
+             <fieldset>
+                <legend>Join the adventurer's guild!</legend>
+                    <label>Name: <input type="text" required></label><br>
+                    <label>Email: <input type="email" required></label><br>
+                    <label>Password: <input type="password" minlength="8" required></label><br>
+                    <button type="submit">Done!</button>
+            </fieldset>
+        </form>
+    </section>
+
+<footer>
+  <p>© 2024 Monster Hunter World Fan Site — Hunter: Hiraeth</p>
+</footer>
+
+<script>
+  function toggleMusic() {
+    const music = document.getElementById('bgmusic');
+    if (music.paused) {
+      music.play();
+    } else {
+      music.pause();
+    }
+  }
+</script>
+
+</body>
+</html>

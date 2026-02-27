@@ -1,0 +1,305 @@
+:root {
+  --primary: #c8a96e;      /* gold — MHW uses a lot of gold */
+  --bg: #0a0a0f;           /* almost black */
+  --section-bg: #111118;   /* slightly lighter dark */
+  --card-bg: #1a1a24;      /* card background */
+  --text: #e8e0d0;         /* warm white — easier on eyes than pure white */
+  --text-muted: #9a9080;   /* muted text */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Raleway', sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 40px;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 100;
+}
+
+.navbar nav {
+  display: flex;
+}
+
+.navbar .logo {
+  color: var(--primary);
+  font-family: 'Cinzel', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-right: auto;
+}
+
+.navbar a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 0 15px;
+}
+
+body {
+  padding-top: 80px;
+}
+
+#home {
+  min-height: 100vh;
+  background-image: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)),
+    url('./images/1393464\ \(1\).jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+#home h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--primary);
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+#home p {
+  font-size: 1.2rem;
+  color: var(--text);
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+
+#home a {
+  display: inline-block;
+  padding: 15px 40px;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  text-decoration: none;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+#about {
+  padding: 100px 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#about h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 30px;
+  letter-spacing: 3px;
+}
+
+#about p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-muted);
+}
+
+/* ABOUT */
+#about {
+  padding: 100px 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#about h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 30px;
+  letter-spacing: 3px;
+}
+
+#about p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-muted);
+}
+
+/* MONSTERS */
+#monsters {
+  padding: 100px 40px;
+  background-color: var(--section-bg);
+  text-align: center;
+  
+}
+
+#monsters .cards-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+#monsters h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 60px;
+  letter-spacing: 3px;
+}
+
+/* Since you don't have flexbox yet, 
+   monsters will stack vertically for now.
+   They'll go side by side in Stage 6! */
+
+#monsters article {
+  background-color: var(--card-bg);
+  border: 1px solid #2a2a3a;
+  border-radius: 8px;
+  padding: 30px;
+  margin: 0 auto 30px auto;
+  max-width: 400px;
+}
+
+#monsters article img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+#monsters article h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 1.5rem;
+  color: var(--primary);
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+#monsters article p {
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+#monsters article a {
+  display: inline-block;
+  padding: 8px 24px;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+/* GUILD REGISTRATION */
+#guild_registration {
+  padding: 100px 40px;
+  text-align: center;
+}
+
+#guild_registration h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 40px;
+  letter-spacing: 3px;
+}
+
+#guild_registration form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#guild_registration fieldset {
+  border: 1px solid #2a2a3a;
+  border-radius: 8px;
+  padding: 40px;
+}
+
+#guild_registration legend {
+  color: var(--primary);
+  font-family: 'Cinzel', serif;
+  letter-spacing: 2px;
+  padding: 0 10px;
+}
+
+#guild_registration label {
+  display: block;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+#guild_registration input {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  margin-top: 8px;
+  background-color: #1a1a24;
+  border: 1px solid #2a2a3a;
+  border-radius: 4px;
+  color: var(--text);
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+}
+
+#guild_registration button {
+  margin-top: 10px;
+  padding: 12px 40px;
+  background-color: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  font-family: 'Cinzel', serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100%;
+}
+
+/* FOOTER */
+footer {
+  padding: 40px;
+  text-align: center;
+  background-color: #000000;
+  border-top: 1px solid #2a2a3a;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+}
+
+.music-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--primary);
+  background-color: rgba(0,0,0,0.8);
+  color: var(--primary);
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 100;
+}
